@@ -1,0 +1,91 @@
+@import '../../../styles.scss';
+.subcontainer__quotation{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.subcontainer__arrowback{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subcontainer__top{
+    // display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5%;
+    // grid-template-areas: 
+    // "placa monto"
+    // "coberturas monto"
+    // "coberturas .";
+    // grid-gap: 10%;
+    @media screen and (max-width: 580px) {
+        grid-template-areas:    "placa"
+                                "coberturas"
+                                "monto";
+                                grid-gap: 5%;
+    }
+}
+.subcontainer__top--info--left{
+    border: 3px solid #F0F2FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    grid-area: placa;
+    justify-content: space-around;
+    .letter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+.toy__rimac{
+    width: 20%;
+    
+}
+
+.toy__sticker{
+
+    width: 20%;
+    
+    @media screen and (max-width: 580px) {
+        display: none;
+    }
+}
+
+.subcontainer__top--info--rigth{
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 580px) {
+       flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.letter-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media screen and (max-width: 580px) {
+       display: none;
+    }
+}
+
+.box-tabs{
+    border-bottom: 1px solid #E4E8F7;
+    text-align: center;
+    .tabs{
+        padding: 4%;
+    }
+}
+
+.letter-tab{
+    color: '#494F66';
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
